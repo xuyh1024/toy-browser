@@ -10,8 +10,6 @@ function addCSSRules(text) {
 
 //计算css
 function computeCSS(element,stack) {
-    // console.log(rules)
-    // console.log("compute css for Element", element)
     let elements = stack.slice().reverse()
     if (!element.computedStyle) {
         element.computedStyle = {}

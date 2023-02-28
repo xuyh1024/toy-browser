@@ -2,9 +2,11 @@ lockfileVersion: 5.4
 
 specifiers:
   css: ^3.0.0
+  images: ^3.2.4
 
 dependencies:
   css: 3.0.0
+  images: 3.2.4
 
 packages:
 
@@ -25,6 +27,11 @@ packages:
   /decode-uri-component/0.2.2:
     resolution: {integrity: sha512-FqUYQ+8o158GyGTrMFJms9qh3CqTKvAqgqsTnkLI8sKu0028orqBhxNMFkFen0zGyg6epACD32pjVk58ngIErQ==}
     engines: {node: '>=0.10'}
+    dev: false
+
+  /images/3.2.4:
+    resolution: {integrity: sha512-Uq61/Q8XixCRyKvws7tPwboK0O70Dbr4kMQZHw2dqdEhnU6TpaGwyMg0vzQ4aaGtrO9N3etq46XwF7hxbqp8ug==}
+    requiresBuild: true
     dev: false
 
   /inherits/2.0.4:

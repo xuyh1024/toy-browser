@@ -1,4 +1,5 @@
 import {computeCSS,addCSSRules} from '../css/index.js'
+import layout from '../layout/index.js'
 // 用来存储当前的token
 let currentToken = null
 // 用来存储当前的属性
@@ -277,6 +278,7 @@ function emit(token) {
             if (top.tagName == "style") {
                 addCSSRules(top.children[0].content)
             }
+            layout(top)
             stack.pop()
         }
         currentTextNode = null
